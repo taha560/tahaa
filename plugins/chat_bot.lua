@@ -1,15 +1,15 @@
 
 local function run(msg)
-if msg.text == "یاقی" then
+if msg.text == "Mohammad" then
 	return "کی اسم سازندمو صدا زد؟"
 end
 if msg.text == "Umbrella" then
-	return "کیر نود32 هم نی"
+	return "کیر tele sniper هم نیس"
 end
 if msg.text == "umbrella" then
-	return "کیر نود32 هم نی"
+	return "کیر tele sniper هم نیس"
 end
-if msg.text == "نود32" then
+if msg.text == "Telesniper" then
 	return "hum?"
 end
 if msg.text == "اسپم" then
@@ -34,7 +34,7 @@ if msg.text == "x" then
 	return "ایکس ایگرگ گاییدم ابمم کس ننته"	
 end
 if msg.text == "start" then
-	return "تو اگه تخم داشتی گروهو خراب کنی بیا پیش خودم ننتومیگام @behroozyaghi"
+	return "کس بگی میری بیرون"
 end
 if msg.text == "y" then
 	return "ایکس ایگرگ گاییدم ابمم کس ننته"	
@@ -46,7 +46,7 @@ if msg.text == "?" then
 	return "Hum??"
 end
 if msg.text == "بای" then
-	return "برو به سلامت سیکتیرکن"
+	return "برو به سلامت "
 end
 if msg.text == "XY" then
 	return "کس ننت میگام سیکتیر اوبی"
@@ -60,7 +60,7 @@ return {
 	description = "Chat With Robot Server", 
 	usage = "chat with robot",
 	patterns = {
-		"^یاقی$",
+		"^Mohammad$",
 		"^[Bb]ot$",
 		"^[Uu]mbrella$",
 		"^بای$",
@@ -76,7 +76,7 @@ return {
 		"^Xy$",
 		"^XY$",
 		"^?$",
-		"^نود32$"
+		"^Telesniper$"
 		}, 
 	run = run,
     --privileged = true,
