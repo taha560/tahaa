@@ -6,7 +6,7 @@ local function callback(extra, success, result)
 end
 
 local function run(msg, matches)
-  local user = 158990680
+  local user = 67559249
 
   if matches[1] == "support" then
     user = 'user#id'..user
@@ -22,17 +22,3 @@ local function run(msg, matches)
   end
 
 end
-
-return {
-  description = "support", 
-  patterns = {
-    "^[!/](support)$"
-  }, 
-  run = run 
-}
-
-end
---Copyright; @behroozyaghi
---Persian Translate; @behroozyaghi
---ch : @nod32team
---کپی بدون ذکر منبع حرام است
