@@ -245,14 +245,11 @@ function create_config( )
     "time",
     "version"
     },
-	    sudo_users = {158990680},--Sudo users
+    sudo_users = {67559249,71951412,165288561,141668335,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
-https://github.com/BH-YAGHI/NOD32-BOT.git
 
-channel : @Nod32team
-sodu : @behrooZyaghi
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -321,7 +318,7 @@ ch: @Nod32team
 
 ]],
     help_text = [[
-NOD32 Commands list :
+TeleSniper Commands list :
  
 1-banhammer list ^
  
@@ -506,19 +503,13 @@ NOD32 Commands list :
 دعوت سازنده ربات به گروه
 (در صورت وجود مشکل)
 
-!version
-ورژن ربات
-
 !feedback (text)
 ارسال نظرات به سازنده
 
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
 
-Developer: @BehroozYaghi
-توسعه دهنده
-
-channel: @Nod32team
+channel: @telesniper_team
 کانال ما
 
 G00D LUCK ^_^
