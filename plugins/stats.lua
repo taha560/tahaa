@@ -91,10 +91,10 @@ local function bot_stats()
   return text
 end
 local function run(msg, matches)
-  if matches[1]:lower() == 'nod32' then -- Put everything you like :)
+  if matches[1]:lower() == 'telesniper' then -- Put everything you like :)
     local about = _config.about_text
     local name = user_print_name(msg.from)
-    savelog(msg.to.id, name.." ["..msg.from.id.."] used /nod32 ")
+    savelog(msg.to.id, name.." ["..msg.from.id.."] used /telesniper ")
     return about
   end 
   if matches[1]:lower() == "statslist" then
@@ -120,7 +120,7 @@ local function run(msg, matches)
         return
       end
     end
-    if matches[2] == "nod32" then -- Put everything you like :)
+    if matches[2] == "telesniper" then -- Put everything you like :)
       if not is_admin(msg) then
         return "For admins only !"
       else
@@ -141,7 +141,7 @@ return {
     "^[!/]([Ss]tats)$",
     "^[!/]([Ss]tatslist)$",
     "^[!/]([Ss]tats) (group) (%d+)",
-    "^[!/]([Ss]tats) (nod32)",-- Put everything you like :)
+    "^[!/]([Ss]tats) (telesniper)",-- Put everything you like :)
 		"^[!/]([Nn]od32)"-- Put everything you like :)
     }, 
   run = run
