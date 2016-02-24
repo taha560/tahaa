@@ -10,9 +10,9 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 
 cd $HOME
 
-git clone https://github.com/BH-YAGHI/NOD32-BOT.git
+git clone https://github.com/groupforspeed/TeleSniper.git
 
-cd NOD32-BOT
+cd TeleSniper
 
 chmod +x launch.sh
 
