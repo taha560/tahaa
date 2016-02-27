@@ -1,4 +1,4 @@
-do
+  do
 
 -- Check Member
 local function check_member_autorealm(cb_extra, success, result)
@@ -371,6 +371,29 @@ save_data(_config.moderation.data, data)
 return 'ads has been unlocked'
 end
 end
+  end
+local group_lock_username = data{tostring(target)['settings']['lock_username']
+if group_lock_username == 'yes' then 
+return 'username is already locked'
+else
+data[tostring(target)]['settings']['lock_username'] = 'yes'
+save_data(_config.moderation.data, data)
+return 'username has been locked'
+end
+end
+local function unlock_group_username(msg, data, target)
+if not is_momod(msg) then
+return "For moderators only!"
+end
+local group_lock_username =[targeting(target)]['settings']['lock_username']
+if group_lock_username == 'no' then
+return 'username is already locked'
+else
+data[targeting(target)]['settings']['lock_username'] = 'no'
+save_data(_config.moderation.data, data)
+return 'username has been unlocked'
+end
+  end
 local function lock_group_namemod(msg, data, target)
   if not is_momod(msg) then
     return "For moderators only!"
@@ -527,22 +550,6 @@ local function unlock_group_photomod(msg, data, target)
   end
 end
 
-end
-  local data = load_data(_config.moderation.data)
-  if data[tostring(msg.to.id)]['settings']['username'] then
-    if data[tostring(msg.to.id)]['settings']['username'] == 'yes' then
-      if antiusername[msg.from.id] == true then 
-        return
-      end
-      send_large_msg("chat#id".. msg.to.id , "username is not allowed here")
-      local name = user_print_name(msg.from)
-      savelog(msg.to.id, name.." ["..msg.from.id.."] kicked (username was locked) ")
-      chat_del_user('chat#id'..msg.to.id,'user#id'..msg.from.id,ok_cb,false)
-		  antiusername[msg.from.id] = true
-      return
-    end
-  end
-  
 local function set_rulesmod(msg, data, target)
   if not is_momod(msg) then
     return "For moderators only!"
