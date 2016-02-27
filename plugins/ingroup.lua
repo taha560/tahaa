@@ -527,6 +527,22 @@ local function unlock_group_photomod(msg, data, target)
   end
 end
 
+end
+  local data = load_data(_config.moderation.data)
+  if data[tostring(msg.to.id)]['settings']['username'] then
+    if data[tostring(msg.to.id)]['settings']['username'] == 'yes' then
+      if antiusername[msg.from.id] == true then 
+        return
+      end
+      send_large_msg("chat#id".. msg.to.id , "username is not allowed here")
+      local name = user_print_name(msg.from)
+      savelog(msg.to.id, name.." ["..msg.from.id.."] kicked (username was locked) ")
+      chat_del_user('chat#id'..msg.to.id,'user#id'..msg.from.id,ok_cb,false)
+		  antiusername[msg.from.id] = true
+      return
+    end
+  end
+  
 local function set_rulesmod(msg, data, target)
   if not is_momod(msg) then
     return "For moderators only!"
