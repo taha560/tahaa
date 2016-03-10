@@ -129,10 +129,10 @@ end
 
 return {
   patterns = {
-    "^([/!]filter) (.+) (%d+)$",
-    "^([/!]filter) (.+) (.+)$",
-    "^([/!]filter) (.+)$",
-    "^[!/](listft)$"
+    "^(filter) (.+) (%d+)$",
+    "^(filter) (.+) (.+)$",
+    "^(filter) (.+)$",
+    "^(listft)$"
     },
     run = run
 } 
