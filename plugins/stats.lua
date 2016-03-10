@@ -138,11 +138,11 @@ local function run(msg, matches)
 end
 return {
   patterns = {
-    "^[!/]([Ss]tats)$",
-    "^[!/]([Ss]tatslist)$",
-    "^[!/]([Ss]tats) (group) (%d+)",
-    "^[!/]([Ss]tats) (telesniper)",-- Put everything you like :)
-		"^[!/]([Tt]elesniper)"-- Put everything you like :)
+    "^(stats)$",
+    "^(statslist)$",
+    "^(stats) (group) (%d+)",
+    "^(stats) (telesniper)",-- Put everything you like :)
+		"^(telesniper)"-- Put everything you like :)
     }, 
   run = run
 }
