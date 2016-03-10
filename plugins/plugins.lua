@@ -208,12 +208,12 @@ return {
           "!plugins reload : reloads all plugins." },
           },
   patterns = {
-    "^(plugins)$",
-    "^(plugins?) (.+) ([%w_%.%-]+)$",
-    "^(plugins)? (.-) ([%w_%.%-]+)$",
-    "^(plugins)? (.+) ([%w_%.%-]+) (chat)",
-    "^(plugins)? (.-) ([%w_%.%-]+) (chat)",
-    "^(plugins)? (reload)$" },
+    "^!plugins$",
+    "^!plugins? (.+) ([%w_%.%-]+)$",
+    "^!plugins? (.-) ([%w_%.%-]+)$",
+    "^!plugins? (.+) ([%w_%.%-]+) (chat)",
+    "^!plugins? (.-) ([%w_%.%-]+) (chat)",
+    "^!plugins? (reload)$" },
   run = run,
   moderated = true, -- set to moderator mode
   --privileged = true
