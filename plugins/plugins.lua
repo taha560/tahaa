@@ -198,22 +198,22 @@ return {
   description = "Plugin Manager", 
   usage = {
       moderator = {
-          "plugins - (name) gp : disable item in group",
-          "plugins + (name) gp : enable item in group",
+          "/plugins - (name) gp : disable item in group",
+          "/plugins + (name) gp : enable item in group",
           },
       sudo = {
-          "plugins : plugins list",
-          "plugins + (name) : enable bot item",
-          "plugins - (name) : disable bot item",
-          "plugins @ : reloads plugins" },
+          "/plugins : plugins list",
+          "/plugins + (name) : enable bot item",
+          "/plugins - (name) : disable bot item",
+          "/plugins @ : reloads plugins" },
           },
   patterns = {
-    "^plugins$",
-    "^plugins? (+) ([%w_%.%-]+)$",
-    "^plugins? (-) ([%w_%.%-]+)$",
-    "^plugins? (+) ([%w_%.%-]+) (gp)",
-    "^plugins? (-) ([%w_%.%-]+) (gp)",
-    "^plugins? (@)$" },
+    "^[!/]plugins$",
+    "^[!/]plugins? (+) ([%w_%.%-]+)$",
+    "^[!/]plugins? (-) ([%w_%.%-]+)$",
+    "^[!/]plugins? (+) ([%w_%.%-]+) (gp)",
+    "^[!/]plugins? (-) ([%w_%.%-]+) (gp)",
+    "^[!/]plugins? (@)$" },
   run = run,
   moderated = true, -- set to moderator mode
   --privileged = true
