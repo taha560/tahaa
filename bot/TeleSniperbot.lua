@@ -318,201 +318,186 @@ chnnel: @telesniper_team
 
 ]],
     help_text = [[
-TeleSniper Commands list :
+⚙TeleSniper help list :
  
 1-banhammer list ^
  
-!kick [username|id]
-(کیک کردن شخص (حتی با ریپلی)
+kick [username|id]
+🚹🚫🔹(کیک کردن شخص (حتی با ریپلی)
 
-!ban [ username|id]
-(بن کردن افراد (حتی با ریپلی)
+ban [ username|id]
+🚷🔹(بن کردن افراد (حتی با ریپلی)
 
-!unban [id]
-(انبن کردن افراد (همراه ایدی)
+unban [id]
+☑️🔹(انبن کردن افراد (همراه ایدی)
 
-!kickinactive
-حذف اعضای غیرغعال گروه
+kickinactive
+🚮🔹حذف اعضای غیرغعال گروه
 
-!kickme
-خروج از گروه
+kickme
+🔚🔹خروج از گروه
 
 2-Statistics list ^
 
-!who
-لیست+ایدی همه اعضا
+who
+💱🔹لیست+ایدی همه اعضا
 
-!all
-دریافت اطلاعات کلی گروه
+all
+📇🔹دریافت اطلاعات کلی گروه
 
-!stats
-امار کلی گروه
+stats
+📮🔹امار کلی گروه
 
-!modlist
-لیست مدیران گروه
+modlist
+👥🔹لیست مدیران گروه
 
-!banlist
-لیست اعضا بن شده
+banlist
+📖🖇🔹لیست اعضا بن شده
 
 3-Rate Member ^
 
-!setowner [id]
-(id ایجاد مدیر جدید (همراه 
+setowner [id]
+(id ایجاد مدیر جدید (همراه 👤🔹
 
-!promote [username]
-(ایجاد ادمین جدید (همراه ریپلی)
+promote [username]
+🔛🔹(ایجاد ادمین جدید (همراه ریپلی)
 
-!demote [username]
-(برکنار کردن ادمین (همراه ریپلی)
+demote [username]
+🔙🔹(برکنار کردن ادمین (همراه ریپلی)
 
 4-General changes ^
 
-!setname [name]
-ایجاد اسم جدید برای گروه
+setname [name]
+💠🔹ایجاد اسم جدید برای گروه
 
-!setphoto
-ایجاد عکس جدید برای پروفایل گروه
+setphoto
+🏙🔹ایجاد عکس جدید برای پروفایل گروه
 
-!set rules <text>
-ایجاد قانون جدید برای گروه
+set rules <text>
+📝🔹ایجاد قانون جدید برای گروه
 
-!set about <text>
-ایجاد درباره گروه
+set about <text>
+🗂🔹ایجاد درباره گروه
 
-!setflood [value]
-حساسیت به اسپم در گروه
+setflood [value]
+〰🔹حساسیت به اسپم در گروه
 
 5-View details ^
 
-!about
-درباره گروه
+about
+📚🔹درباره گروه
 
-!rules
-قوانین گروه
+rules
+📜🔹قوانین گروه
 
-!settings
-دیدن تنظیمات فعلی گروه
+settings
+⚙🔹دیدن تنظیمات فعلی گروه
 
-!help
-لیست دستورات ربات
+help
+📋🔹لیست دستورات ربات
 
 6-Security Group ^
 
-!lock member 
-قفل ورود اعضا جدید
+lock member 
+🔒🔹قفل ورود اعضا جدید
 
-!lock join
-قفل ورود اعضا جدید توسط لینک
+lock join
+🔒📄🔹قفل ورود اعضا جدید توسط لینک
 
-!lock name
-قفل اسم گروه
+lock name
+🔒🔹قفل اسم گروه
 
-!lock chat
-قفل چت ممنوع
+lock chat
+🔐🔹قفل چت ممنوع
 
-!lock ads
-قفل تبلیغات
+lock ads
+🔒🔹قفل تبلیغات
 
-!lock leave
-قفل خروج=بن گروه
+lock leave
+🔒🔹قفل خروج=بن گروه
 
-!lock fosh
-ممنوع کردن فحش
+lock fosh
+🌀🚫🔹ممنوع کردن فحش
 
-!lock chat
-قفل چت ممنوع گروه
+lock chat
+📑🔹قفل چت ممنوع گروه
 
-!antibot enable 
-ورود ربات ها ممنوع
+antibot enable 
+🤖✖️🔹ورود ربات ها ممنوع
 
-!antibot disable
-ورود ربات ها ازاد
+antibot disable
+🤖✔️🔹ورود ربات ها ازاد
 
-!unlock xxxx
+unlock xxxx
 [*name*leave*member]
 [*fosh*ads]
 [chat*join*photo]
-باز کردن دستورات قفل شده
+🔝🔹باز کردن دستورات قفل شده
 
-7-sticker Mode ^
+7-Fun time ^
 
-!sticker warn
-اخطار به فرد استیکر ارسال کننده
+time country city
+⏱🔹ساعت کشور مورد نظر
 
-!sticker kick
-قفل استفاده از استیکر
+loc country city
+🌐🔍🔹مشخصات کشور و شهر مورد نظر
 
-!sticker ok
-استفاده از استیکر ازاد
-
-8-Fun time ^
-
-!time country city
-ساعت کشور مورد نظر
-
-!loc country city
-مشخصات کشور و شهر مورد نظر
-
-!google
-سرچ مطلب مورد نظر از گوگل
+google
+🔍🔹سرچ مطلب مورد نظر از گوگل
  
- !gps
- مکان کشور , شهر مورد نظر تحت گوگل
+ gps
+🌐🔹مکان کشور , شهر مورد نظر تحت گوگل
  
- !calc 3+1
- انجام محاسبات ریاضی
+ calc 3+1
+🔣🔹انجام محاسبات ریاضی
 
-9-Service Provider ^
+8-Service Provider ^
 
-!newlink
-ایجاد لینک جدید
+newlink
+📃🔹ایجاد لینک جدید
 
-!link
-نمایش لینک گروه
+link
+📋🔹نمایش لینک گروه
 
-!linkpv
-فرستادن لینک گروه تو پیوی
+linkpv
+⤵️🔹فرستادن لینک گروه تو پیوی
 (حتما شماره ربات را سیو کنید)
 
-!invite username
-اضافه کردن شخص تو گروه
+invite username
+↪️🔹اضافه کردن شخص تو گروه
 (حتما شماره ربات را سیو کرده باشد)
 
-10-Member Profile and Group ^
-!owner
-مدیر گروه
+9-Member Profile and Group ^
+owner
+🔰🔹مدیر گروه
 
-!id
-ایدی شخص مورد نظر
+id
+👁‍🗨🔹ایدی شخص مورد نظر
 
-!res [username]
-در اوردن ایدی شخص مورد نظر
+res [username]
+🔢🔹در اوردن ایدی شخص مورد نظر
 
-!info 
-مخشصات فرد مورد نظر
+info 
+📇🔹مشخصات فرد مورد نظر
 
-!settings
-تنظیمات فعلی گروه
+settings
+🔧🔹تنظیمات فعلی گروه
 
-11-bot number & support ^
+10-bot number & support ^
 
-!botnumber
-دریافت شماره ربات
+botnumber
+🀄️🔹دریافت شماره ربات
 
-!support
-دعوت سازنده ربات به گروه
+support
+⚙🔹دعوت سازنده ربات به گروه
 (در صورت وجود مشکل)
 
-!feedback (text)
-ارسال نظرات به سازنده
+It is Not Necessary "!" and "/" 
 
-you can use both "/" and "!" 
-.شما میتوانید از ! و / استفاده کنید
+شما لازم نیست از '!' و '/' استفاده کنید
 
-channel: @telesniper_team
+Channel: @telesniper_team
 کانال ما
-
-G00D LUCK ^_^
 ]]
   }
   serialize_to_file(config, './data/config.lua')
