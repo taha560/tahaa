@@ -142,7 +142,7 @@ return {
     "^(statslist)$",
     "^(stats) (group) (%d+)",
     "^(stats) (telesniper)",-- Put everything you like :)
-		"^[!/](telesniper)"-- Put everything you like :)
+		"^(telesniper)"-- Put everything you like :)
     }, 
   run = run
 }
