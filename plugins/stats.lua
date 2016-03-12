@@ -94,7 +94,7 @@ local function run(msg, matches)
   if matches[1]:lower() == 'telesniper' then -- Put everything you like :)
     local about = _config.about_text
     local name = user_print_name(msg.from)
-    savelog(msg.to.id, name.." ["..msg.from.id.."] used /telesniper ")
+    savelog(msg.to.id, name.." ["..msg.from.id.."] used telesniper ")
     return about
   end 
   if matches[1]:lower() == "statslist" then
@@ -142,7 +142,7 @@ return {
     "^(statslist)$",
     "^(stats) (group) (%d+)",
     "^(stats) (telesniper)",-- Put everything you like :)
-		"^telesniper"-- Put everything you like :)
+		"^(telesniper)"-- Put everything you like :)
     }, 
   run = run
 }
