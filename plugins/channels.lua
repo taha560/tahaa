@@ -40,8 +40,9 @@ end
 local function pre_process(msg)
 	local receiver = get_receiver(msg)
 	
-	-- If sender is sudo then re-enable the channel
-	if is_sudo(msg) then
+	-- If sender is moderator then re-enable the channel
+	--if is_sudo(msg) then
+	if is_momod(msg) then
 	  if msg.text == "!channel enable" then
 	    enable_channel(receiver)
 	  end
@@ -69,12 +70,13 @@ end
 return {
 	description = "Plugin to manage channels. Enable or disable channel.", 
 	usage = {
-		"channel enable: enable current channel",
-		"channel disable: disable current channel" },
+		"!channel enable: enable current channel",
+		"!channel disable: disable current channel" },
 	patterns = {
-		"^(channel)? (enable)",
-		"^(channel)? (disable)" }, 
+		"^!channel? (enable)",
+		"^!channel? (disable)" }, 
 	run = run,
-	privileged = true,
+	--privileged = true,
+	moderated = true,
 	pre_process = pre_process
 }
