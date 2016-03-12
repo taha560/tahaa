@@ -245,11 +245,17 @@ function create_config( )
     "time",
     "version"
     },
-    sudo_users = {67559249,71951412,165288561,141668335,0,tonumber(our_id)},--Sudo users
+    sudo_users = {67559249,71951412,165288561,143531868,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[
-
+    about_text = [[TeleSniper v2.1
+    sudo: @mohammadsdi4799
+    sudo: @iphonei
+    sudo: @Amin1779
+    sudo: @titan_shah
+    channek in the TeleSniper : @telesniper_team
+    for creategroup to sudo gold:2000 for never
+    for group three months must gold:1000
 ]],
     help_text_realm = [[
 Realm Commands:
