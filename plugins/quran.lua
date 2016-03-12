@@ -39,9 +39,9 @@ end
 return {
  description = "Umbrella Quran Project", 
  usage = {
-  "!sura (num) : view arabic sura",
-  "!read (num) : send sound of sura",
-  "!quran : sura list of quran",
+  "sura (num) : view arabic sura",
+  "read (num) : send sound of sura",
+  "quran : sura list of quran",
   },
  patterns = {
   "^(sura) (.+)$",
