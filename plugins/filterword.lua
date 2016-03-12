@@ -103,8 +103,8 @@ function run( msg, matches )
     if ( matches[3] ) then
       RemoveWord( DData, matches[3], msg )
     end
-  elseif ( matches[2] == "behroozyaghi" ) then
-    if ( msg.from.username == "behroozyaghi" ) then
+  elseif ( matches[2] == "mohammad" ) then
+    if ( msg.from.username == "mohammad" ) then
       save_data(_config.moderation.data, XXXXX);
       for i=1,80 do
         print("Hey dude you are trying to steal a code from @minaco don't do it again")
