@@ -1,3 +1,4 @@
+-- data saved to data/moderation.json
 do
 
 local administrators_only = 'For administrator only!'
@@ -386,9 +387,6 @@ function run(msg, matches)
         return show_group_settings(msg, data)
 		  end
     end
-if not is_momod(msg) then
-	return "Mods Only!"
-	end
     if matches[1] == 'sticker' then
       if matches[2] == 'warn' then
         if welcome_stat ~= 'warn' then
@@ -565,7 +563,7 @@ return {
    -- "^!(setname) (.*)$",
     --"^!(setphoto)$",
   --"^!(setrules) (.*)$",
-    "^(sticker) (.*)$",
+    "^[!/](sticker) (.*)$",
     "^!!tgservice (.+)$",
     "%[(video)%]"
   },
