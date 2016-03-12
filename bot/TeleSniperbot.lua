@@ -221,7 +221,6 @@ function create_config( )
     "calc",
     "chat_bot",
     "download_media",
-    "feedback",
     "get",
     "google",
     "gps",
@@ -239,11 +238,9 @@ function create_config( )
     "owners",
     "plugins",
     "set",
-    "spam",
     "stats",
     "support",
     "time",
-    "version"
     },
     sudo_users = {67559249,71951412,165288561,143531868,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
