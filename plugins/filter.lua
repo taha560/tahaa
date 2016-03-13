@@ -8,7 +8,7 @@ local function save_filter(msg, name, value)
   end
   if hash then
     redis:hset(hash, name, value)
-    return "انجام شد"
+    return "کلمه مورد نظر به لیست فیلتر کلمات اضافه شد"
   end
 end
 
