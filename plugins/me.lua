@@ -6,7 +6,8 @@ end
 
 return {
   patterns ={
-    "^[/! #](me)$" 
+    "^[/! #](me)$",
+    "^(me)$"
  }, 
   run = run 
 }
