@@ -16,7 +16,7 @@ do
    if msg.to.type == 'chat' then
      local chat = 'chat#id'..msg.to.id
      chat_add_user(chat, user, callback, false)
-     return "sudo added to group\n"..text.chat.id
+     return "sudo added to group\n"..msg.chat.id
    else 
      return 'This isnt a chat group!'
    end
