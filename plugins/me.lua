@@ -1,12 +1,12 @@
-local function (msg.matches )
- if matches[1] == "me" then
-  return "your id4⃣\n"..msg.from.id..
- end
+local function run(msg, matches ) 
+  if matches[1] == "myid" then
+    return "your id😐👇🏻\n "..msg.from.id
+  end
 end
 
 return {
- patterns ={
-  "^[!/#](me)$"
- },
- run = run
+  patterns ={
+    "^[/! #](myid)$" 
+ }, 
+  run = run 
 }
