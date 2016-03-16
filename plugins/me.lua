@@ -1,6 +1,6 @@
-local function run(msg.matches )
+local function (msg.matches )
  if matches[1] == "me" then
-  return "your id4⃣ \n"..msg.from.id
+  return "your id4⃣\n"..msg.from.id..
  end
 end
 
