@@ -1,13 +1,12 @@
-do
 local function (msg.matches)
-if matches[1] == 'me'
-return 'me"..msg.from.id
-end
+ if matches[1] == 'me' then
+  return 'your id\n"..msg.from.id
+ end
 end
 
 return {
-patterns ={
-"^me$"
+ patterns ={
+  "^me$"
 },
-run = run
+ run = run
 }
