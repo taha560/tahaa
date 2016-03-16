@@ -16,9 +16,20 @@ local function run(msg, matches)
   if msg.to.type == 'chat' then
     local chat = 'chat#id'..msg.to.id
     chat_add_user(chat, user, callback, false)
-    return "سازنده ربات وارد گروه شد"
+    return "sudo added to group"
   else 
     return 'This isnt a chat group!'
   end
 
 end
+
+ -return {
+ -  description = "support", 
+ -  patterns = {
+ -    "^[!/](support)$",
+      "^(support)$"
+ -  }, 
+ -  run = run 
+ -}
+ -
+ -end
