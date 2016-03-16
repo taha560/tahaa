@@ -1,13 +1,13 @@
 local function run(msg, matches ) 
   if matches[1] == "me" then
-    return "your id🏻\n "..msg.from.id
+    return "your id🏻\n"..msg.from.id
   end
 end
 
 return {
   patterns ={
     "^[/! #](me)$",
-    "^(me)$"
+    "^([Mm]e)$"
  }, 
   run = run 
 }
