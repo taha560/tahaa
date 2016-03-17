@@ -1,36 +1,20 @@
-local function tosticker(msg, success, result)
+do
+local function run(msg, matches)
+  local url = "http://tts.baidu.com/text2audio?lan=en&ie=UTF-8&text="..matches[1]
   local receiver = get_receiver(msg)
-  if success then
-    local file = 'data/stickers/'..msg.from.id..'.jpg'
-    print('File downloaded to:', result)
-    os.rename(result, file)
-    print('File moved to:', file)
-    send_photo(get_receiver(msg), file, ok_cb, false)
-    redis:del("sticker:photo")
-  else
-    print('Error downloading: '..msg.id)
-    send_large_msg(receiver, 'Failed, please try again!', ok_cb, false)
-  end
+  local file = download_to_file(url,'text.ogg')
+      send_audio('channel#id'..msg.to.id, file, ok_cb , false)
 end
-local function run(msg,matches)
-    local receiver = get_receiver(msg)
-    local group = msg.to.id
-    if msg.media then
-       if msg.media.type == 'document' and is_momod(msg) and redis:get("sticker:photo") then
-        if redis:get("sticker:photo") == 'waiting' then
-          load_document(msg.id, tosticker, msg)
-        end
-       end
-    end
-    if matches[1] == "tophoto" and is_momod(msg) then
-     redis:set("sticker:photo", "waiting")
-     return 'لصفا استیکر مورد نظر را ارسال کنید'
-    end
-end
+
 return {
-  patterns = {
- "^(tophoto)$",
- "%[(document)%]",
+  description = "text to voice",
+  usage = {
+    "!voice [text]"
   },
-  run = run,
+  patterns = {
+    "^(voice) (.+)$"
+  },
+  run = run
 }
+
+end
