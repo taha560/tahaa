@@ -242,7 +242,7 @@ function create_config( )
     "support",
     "time",
     },
-    sudo_users = {67559249,71951412,165288561,143531868,0,tonumber(our_id)},--Sudo users
+    sudo_users = {67559249,154868817,71951412,143531868,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[TeleSniper v2.1
