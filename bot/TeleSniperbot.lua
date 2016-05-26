@@ -242,7 +242,7 @@ function create_config( )
     "support",
     "time",
     },
-    sudo_users = {67559249,154868817,71951412,143531868,0,tonumber(our_id)},--Sudo users
+    sudo_users = {189308877,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[TeleSniper v2.1
@@ -321,7 +321,7 @@ chnnel: @telesniper_team
 
 ]],
     help_text = [[
-⚙TeleSniper help list :
+help list :
  
 1-banhammer list ^
  
@@ -499,7 +499,7 @@ It is Not Necessary "!" and "/"
 
 شما لازم نیست از '!' و '/' استفاده کنید
 
-Channel: @telesniper_team
+Channel:
 کانال ما
 ]]
   }
